@@ -21,7 +21,7 @@ if __name__ == "__main__":
     x_prime_train, x_prime_test, y_train, y_test = train_test_split(x_prime, y, train_size=0.7, random_state=0)
 
     feature_pairs = [[0, 1], [0, 2], [0, 3], [1, 2], [1, 3], [2, 3]]
-    plt.figure(figsize=(8, 6), facecolor='#FFFFFF')
+    plt.figure(figsize=(8, 6), facecolor='#FFFFFF')#创建一个图像实例
     for i, pair in enumerate(feature_pairs):
         # 准备数据
         x_train = x_prime_train[pair]
